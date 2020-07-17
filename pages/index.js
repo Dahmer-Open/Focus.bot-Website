@@ -37,12 +37,12 @@ export default function Home() {
           <h2>Presentation</h2>
           <div style={{ textAlign: "left" }}>
             <p>
-              Wether you're managing a study, work or project Discord server,
+              Whether you're managing a study, work or project Discord server,
               Focus provides tools to help your team stay focused by using
               sessions and other time management techniques such as Pomodoro.
             </p>
             <p>
-              Focus also provides a leaderboard so your community can compare
+              Focus also provides a Leaderboard so your community can compare
               their work times and compete for the top!
             </p>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
         <section>
           <h2>Features</h2>
           <p style={{ textAlign: "left" }}>
-            Here are the key feature of Focus. To see the detailed description
+            Here are the key features of Focus. To see the detailed description
             of the features and commands, please
             <a
               href="https://www.google.ca"
@@ -104,7 +104,7 @@ export default function Home() {
             <div>
               <h3>Track your progress</h3>
               <p>
-                You can access Focus's leaderboard and join the competition for
+                You can access Focus's Leaderboard and join the competition for
                 the most persistent! It is optional as it makes your focus time
                 public, but it's a fun way to see your progress while
                 participating in a friendly competition.
@@ -156,7 +156,7 @@ export default function Home() {
             <p>
               There are no fees attached to running Focus. For our
               infrastructure, we targeted services that are free of charge for
-              our current scale and the people building it do it for free. Also
+              our current scale and the people building it do it for free. Also,
               there is no monetary intent behind the project, we simply believe
               that productivity and dedication from all will help build a better
               tomorrow.
