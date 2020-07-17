@@ -177,7 +177,11 @@ export default function Home() {
         </section>
         <footer>
           <span>
-            © {new Date().getFullYear()}{" "}
+            ©{" "}
+            {new Date().getFullYear() !== 2020
+              ? `${new Date().getFullYear()} - `
+              : ""}
+            {new Date().getFullYear()}{" "}
             <a href="https://github.com/Dahmer-Open">Dahmer-Open</a>
           </span>
           <a href="https://www.vecteezy.com/free-vector/wall-paper-office">
