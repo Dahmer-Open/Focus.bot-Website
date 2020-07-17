@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;700&display=swap");
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  color: $not-quite-black;
+}
+
+::selection {
+  background: rgba($primary, 0.4);
+  /* WebKit/Blink Browsers */
+}
+
+::-moz-selection {
+  background: rgba($primary, 0.2);
+  /* Gecko Browsers */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0.6%;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: white;
+  box-shadow: inset $shadow;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba($primary, 0.8);
+
+  &:hover {
+    background: $primary;
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $primary;
+  font-weight: bold;
+  &:visited {
+    font-weight: normal;
+  }
+}
+
+button {
+  margin: $sm;
+  border-radius: 50px;
+  border: 0;
+  color: white;
+  font-family: "Rajdhani", sans-serif;
+  background-color: $quite-black;
+  padding: 16px 32px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: $transition;
+  transition-property: background-color, color, box-shadow, -webkit-box-shadow,
+    transform;
+  &.primary {
+    background-color: white;
+    color: $quite-black;
+  }
+  &.btn-lg {
+    margin: $xl;
+    font-size: 30px;
+  }
+  &:hover {
+    color: $primary;
+    box-shadow: 0 8px 15px rgba(black, 0.2);
+    transform: scale(1.05);
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: lighter;
+  color: $quite-black;
+  text-transform: uppercase;
+}
+
+h1 {
+  letter-spacing: 72px;
+  font-size: 122px;
+}
+
+h2 {
+  &::before {
+    content: "- ";
+  }
+  letter-spacing: 16px;
+  font-size: 44px;
+  &::after {
+    content: " -";
+  }
+}
+
+footer {
+  margin-top: $xl;
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner {
+  margin: auto;
+  height: 550px;
+  padding-left: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  overflow: hidden !important;
+  .banner-discord {
+    position: absolute;
+    top: 25px;
+    left: 8%;
+    font-size: $lg;
+  }
+  .banner-image {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 550px;
+    opacity: 0.45;
+    filter: blur(0);
+    transition: $transition;
+    background-image: url("/img/desk.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 49.5% !important;
+    &:hover {
+      filter: blur(3px);
+    }
+  }
+  .banner-header {
+    opacity: 1;
+    z-index: 50;
+    h1 {
+      margin: 0;
+      margin-bottom: -24px;
+    }
+    span {
+      margin-top: -12px;
+      color: $quite-black;
+    }
+  }
+  .header-actions {
+    z-index: 50;
+    margin: 50px 0 75px 0;
+    width: 66%;
+  }
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: $shadow;
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  margin: $lg 0;
+  padding: $md $lg $md $md;
+  transition: $transition;
+  h3 {
+    transform: translateX(-15px);
+  }
+  &.left {
+    justify-content: end;
+    text-align: right;
+    h3 {
+      transform: translateX(15px);
+    }
+  }
+  img {
+    padding: $md;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.social-link {
+  font-size: $xl;
+  margin: $sm;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.fas,
+.fab {
+  margin-right: $sm;
+}
