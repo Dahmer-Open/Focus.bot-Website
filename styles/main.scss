@@ -127,6 +127,12 @@ footer {
     left: 8%;
     font-size: $lg;
   }
+  .banner-donate {
+    position: absolute;
+    top: 25px;
+    right: 10%;
+    font-size: $lg;
+  }
   .banner-image {
     content: " ";
     position: absolute;
@@ -181,6 +187,15 @@ footer {
   margin: $lg 0;
   padding: $md $lg $md $md;
   transition: $transition;
+  &.muted {
+    color: rgba($not-quite-black, 0.75);
+    h3 {
+      color: rgba($not-quite-black, 0.75);
+    }
+    img {
+      filter: saturate(50%) brightness(125%) grayscale(100%);
+    }
+  }
   h3 {
     transform: translateX(-15px);
   }
@@ -192,6 +207,7 @@ footer {
     }
   }
   img {
+    filter: saturate(60%) brightness(115%) contrast(90%);
     padding: $md;
   }
   &:hover {

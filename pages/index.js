@@ -12,6 +12,16 @@ export default function Home() {
         </div>
         <div className="banner-image" />
         <div className="banner-header">
+          <div className="banner-donate">
+            <button
+              onClick={() => {
+                window.location.replace("http://paypal.me/dahmer96");
+              }}
+            >
+              <i className="fas fa-donate" />
+              Donate
+            </button>
+          </div>
           <h1>Focus</h1>
           <span className="subtitle">
             The discord bot to help you stay on task and achieve your goals!
@@ -27,9 +37,9 @@ export default function Home() {
           >
             <i className="fas fa-cloud-download-alt"></i>Invite to Discord
           </button>
-          <button className="primary">
+          {/* <button className="primary">
             <i className="fas fa-terminal"></i>Features &amp; Commands
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="container">
@@ -49,7 +59,7 @@ export default function Home() {
         </section>
         <section>
           <h2>Features</h2>
-          <p style={{ textAlign: "left" }}>
+          {/* <p style={{ textAlign: "left" }}>
             Here are the key features of Focus. To see the detailed description
             of the features and commands, please
             <a
@@ -60,7 +70,7 @@ export default function Home() {
               &nbsp;click here
             </a>
             .
-          </p>
+          </p> */}
           <div className="card">
             <img src="/img/clock.svg" alt="Clock image" height="150" />
             <div>
@@ -99,10 +109,22 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="card">
+          <div className="card muted">
             <img src="/img/stats.svg" alt="Statistics image" height="150" />
             <div>
-              <h3>Track your progress</h3>
+              <h3>INCOMING - Track your Progress</h3>
+              <p>
+                See how long you've stayed focused, what's your longest session,
+                how many sessions were completed successfully, how many were
+                interrupted, etc. This helps you stay motivated and improve your
+                work environment.
+              </p>
+            </div>
+          </div>
+          <div className="card muted">
+            <img src="/img/trophy.svg" alt="Statistics image" height="150" />
+            <div>
+              <h3>INCOMING - Participate in a Friendly Competition</h3>
               <p>
                 You can access Focus's Leaderboard and join the competition for
                 the most persistent! It is optional as it makes your focus time
@@ -126,9 +148,17 @@ export default function Home() {
           <h2>Contribute</h2>
           <div style={{ textAlign: "left" }}>
             <p>
-              To contribute to the project, check out the code on Github or
-              contact us on the contribute channel of the focus Discord server
-              or by email.
+              If you know a bit if code and love Focus and would love to
+              contribute to it's evolution, contact me with either of the links
+              below. If you're not a programmer, you can always{" "}
+              <a
+                href="http://paypal.me/dahmer96"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                donate
+              </a>{" "}
+              to help focus grow!
             </p>
           </div>
           <p>
@@ -148,18 +178,17 @@ export default function Home() {
           <div style={{ textAlign: "left" }}>
             <h3>Who's behind Focus?</h3>
             <p>
-              Focus is a collaborative, Open-Source project. That means that
-              nobody owns it. It also means that it is developed and maintained
-              by any willing developer!
+              Me! I'm Dominic Fournier, a software engineering student from
+              Canada. I'm always looking for interested developers to work with,
+              but for now, I am the sole developer of Focus.
             </p>
             <h3>How is this service free?</h3>
             <p>
-              There are no fees attached to running Focus. For our
-              infrastructure, we targeted services that are free of charge for
-              our current scale and the people building it do it for free. Also,
-              there is no monetary intent behind the project, we simply believe
-              that productivity and dedication from all will help build a better
-              tomorrow.
+              There are no fees attached to running Focus. Free of charge
+              services are used for our current infrastructure. I also build it
+              as a personnal project, so I handle the cost of development,
+              because I believe that productivity and dedication from all will
+              help build a better tomorrow.
             </p>
             <h3>How can I use Focus?</h3>
             <p>
@@ -172,6 +201,13 @@ export default function Home() {
                 here
               </a>
               .
+            </p>
+            <h3>What about the privacy of my data?</h3>
+            <p>
+              Focus only stores minimal information about you, just enough to
+              work. Your full discord username (ie.: Adam#1234), Identifier,
+              your server Identifier and the URL to your discord avatar are
+              stored, that's it. They're not used for profit either.
             </p>
           </div>
         </section>
