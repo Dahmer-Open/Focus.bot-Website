@@ -109,10 +109,10 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="card muted">
+          <div className="card">
             <img src="/img/stats.svg" alt="Statistics image" height="150" />
             <div>
-              <h3>INCOMING - Track your Progress</h3>
+              <h3>Track your Progress</h3>
               <p>
                 See how long you've stayed focused, what's your longest session,
                 how many sessions were completed successfully, how many were
@@ -207,7 +207,9 @@ export default function Home() {
               Focus only stores minimal information about you, just enough to
               work. Your full discord username (ie.: Adam#1234), Identifier,
               your server Identifier and the URL to your discord avatar are
-              stored, that's it. They're not used for profit either.
+              stored, that's it. Your study sessions are also stored (length and
+              date). This data is not and will not be used for profit in any
+              way.
             </p>
           </div>
         </section>
