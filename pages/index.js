@@ -220,7 +220,7 @@ export default function Home() {
               ? `${new Date().getFullYear()} - `
               : ""}
             {new Date().getFullYear()}{" "}
-            <a href="https://github.com/Dahmer-Open">Dahmer-Open</a>
+            <a href="https://portfolio.dominicfournier.com">Dominic Fournier</a>
           </span>
           <a href="https://www.vecteezy.com/free-vector/wall-paper-office">
             Wall Paper Office Vectors by Vecteezy
